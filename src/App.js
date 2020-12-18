@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Home from './Home'
 
 export default function App() {
+
+  
   const [users, setUsers] = useState([]);
   const [input, setInput] = useState("");
   const [tweets, setTweets] = useState([])
@@ -41,6 +43,10 @@ export default function App() {
           <p className='at'>@{user.login.username}</p>
           <p className='tweets'>{userTweets}</p>
           {/* <p>{userTweets}</p> */}
+          <i class="fas fa-retweet" ></i>
+          <i class="fas fa-reply"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-share"></i>
         </div>
       );
     });
@@ -61,13 +67,16 @@ const getOneImg = () => {
   return (
     <div className="App">
       <h1>Tweet Feed</h1>
-      <label className='label-input'>Search Tweets</label>
+      <div className='input-container'>
       <input
       className='input-box'
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        placeholder='Search...'
       />
+
+      </div>
       {/* <div>
         <Home imgs={users}/>
       </div> */}
