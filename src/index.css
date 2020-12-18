@@ -28,6 +28,7 @@ h1 {
   height: 50%;
   margin-right: 15px;
   margin-left: 2%;
+  padding-top: 10px;
 }
 
 .name {
@@ -53,8 +54,18 @@ h1 {
 
 }
 
+.input-container {
+  border: solid gray;
+  margin-right: 5%;
+  width: 7.8%;
+  height: 30px;
+  float: right;
+}
+
 .input-box {
   float: right;
+  height: 30px;
+
 }
 
 .tweets {
@@ -65,7 +76,8 @@ overflow: hidden;
 white-space: nowrap;
 color: white;
 margin-left: 2%;
-
+text-align: center;
+padding-top: 30px;
 }
 
 .tweet-container {
@@ -106,4 +118,14 @@ margin-left: 2%;
   margin-top: 5%;
   background-color: rgb(21, 32, 43);;
   color: white;
+}
+
+i {
+  color: white;
+  padding: 1em;
+  position: relative;
+  /* position: absolute; */
+  /* font-size: 2em; */
+  /* bottom: 0;  */
+  
 }
