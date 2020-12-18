@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Home from './Home'
+// import Home from './Home'
+import {Repeat} from 'react-feather';
+import {MessageCircle} from 'react-feather';
+import {Heart} from 'react-feather'; 
+import {Share} from 'react-feather';
+
 
 export default function App() {
-
   
   const [users, setUsers] = useState([]);
   const [input, setInput] = useState("");
@@ -41,12 +45,14 @@ export default function App() {
           />
           <p className='name'>{user.name.first} {user.name.last}</p>
           <p className='at'>@{user.login.username}</p>
+          <MessageCircle />
+        <Repeat />
+        <Heart />
+        <Share />
           <p className='tweets'>{userTweets}</p>
-          {/* <p>{userTweets}</p> */}
-          <i class="fas fa-retweet" ></i>
-          <i class="fas fa-reply"></i>
-          <i class="far fa-heart"></i>
-          <i class="fas fa-share"></i>
+          <p>
+
+          </p>
         </div>
       );
     });
