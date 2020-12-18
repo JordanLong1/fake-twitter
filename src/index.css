@@ -1,13 +1,109 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgb(21, 32, 43);;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.users-container {
+  border: solid 0.5px gray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* border: solid; */
+  text-align-last: center;
+  width: 40%;
+  margin-left: 30%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.imgs {
+  border-radius: 50%;
+  float: left;
+  height: 50%;
+  margin-right: 15px;
+  margin-left: 2%;
+}
+
+.name {
+  float: left;
+  margin-right: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+.at {
+  float: left;
+  color: white;
+
+}
+
+.label-input {
+  float: right;
+  color: white;
+
+}
+
+.app {
+
+}
+
+.input-box {
+  float: right;
+}
+
+.tweets {
+  height: 100%;
+  width: 450px;
+  text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+color: white;
+margin-left: 2%;
+
+}
+
+.tweet-container {
+  width: 100%;
+}
+
+/* .home-section {
+  width: 25%;
+  height: 45px;
+  border: solid white;
+  margin-left: 36.7%;
+} */
+
+.home-section h6 {
+  color: white;
+}
+
+
+.content-section {
+  height: 100px;
+  width: 25%;
+  border: solid gray;
+  margin-left: 36.7%;
+  margin-bottom: 15px;
+}
+.avt-img {
+  width: 10%;
+  border-radius: 20%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* padding-bottom: 10%; */
+}
+
+#text {
+  width: 75%;
+  height: 75px;
+  margin-top: 5%;
+  background-color: rgb(21, 32, 43);;
+  color: white;
 }
