@@ -4,14 +4,35 @@ body {
   background-color: rgb(21, 32, 43);;
 }
 
+.nav-container {
+  width: 25%;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55%;
+  border-right: solid gray;
+}
+
+.nav-section li {
+  color: white;
+  margin: 3%;
+  list-style: none;
+  font-size: 30px;
+  margin-top: 15%;
+}
+
+
+
 .users-container {
   border: solid 0.5px gray;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  /* border: solid; */
+
+  display: flex;
+  flex-direction: column;
   text-align-last: center;
   width: 40%;
   margin-left: 30%;
@@ -50,9 +71,7 @@ h1 {
 
 }
 
-.app {
 
-}
 
 .input-container {
   border: solid gray;
