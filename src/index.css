@@ -5,6 +5,7 @@ body {
 }
 
 .nav-container {
+  margin-top: 5%;
   width: 25%;
 }
 
@@ -12,21 +13,35 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 55%;
-  border-right: solid gray;
 }
 
 .nav-section li {
   color: white;
-  margin: 3%;
+  margin: 5%;
   list-style: none;
   font-size: 30px;
   margin-top: 15%;
+}
+
+.nav-section button {
+  width: 75%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 5%;
+ 
+}
+
+.nav-section li:hover {
+  color: rgba(29,161,242,1.00);
+  /* background-color: rgba(29,161,242,1.00); */
+  
 }
 
 
 
 .users-container {
   border: solid 0.5px gray;
+
 }
 
 .grid {
@@ -46,7 +61,7 @@ h1 {
 .imgs {
   border-radius: 50%;
   float: left;
-  height: 50%;
+  height: 10%;
   margin-right: 15px;
   margin-left: 2%;
   padding-top: 10px;
