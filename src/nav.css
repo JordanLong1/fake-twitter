@@ -1,0 +1,20 @@
+.nav-container {
+    width: 25%;
+    height: 100%;
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55%;
+    border-right: solid gray;
+}
+
+.nav-section li {
+    color: white;
+    margin: 3%;
+    list-style: none;
+    font-size: 30px;
+    margin-top: 15%;
+}
+
