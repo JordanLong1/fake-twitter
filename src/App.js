@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-// import Home from './Home'
+import Home from './Home'
 import {Repeat} from 'react-feather';
 import {MessageCircle} from 'react-feather';
 import {Heart} from 'react-feather'; 
 import {Share} from 'react-feather';
-
+import SideNav from './SideNav'
 
 export default function App() {
   
@@ -72,7 +72,6 @@ const getOneImg = () => {
 
   return (
     <div className="App">
-      <h1>Tweet Feed</h1>
       <div className='input-container'>
       <input
       className='input-box'
@@ -83,9 +82,7 @@ const getOneImg = () => {
       />
 
       </div>
-      {/* <div>
-        <Home imgs={users}/>
-      </div> */}
+      <SideNav />
       <div className="grid">
         {mapUsers()}
         {getOneImg()}
