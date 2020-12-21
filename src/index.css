@@ -2,56 +2,30 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(21, 32, 43);;
-}
-
-.nav-container {
-  margin-top: 5%;
-  width: 25%;
-}
-
-.nav-section {
-  display: flex;
-  flex-direction: column;
-  margin-left: 55%;
-}
-
-.nav-section li {
-  color: white;
-  margin: 5%;
-  list-style: none;
-  font-size: 30px;
-  margin-top: 15%;
-}
-
-.nav-section button {
-  width: 75%;
-  height: 30px;
-  border-radius: 15px;
-  margin-top: 5%;
- 
-}
-
-.nav-section li:hover {
-  color: rgba(29,161,242,1.00);
-  /* background-color: rgba(29,161,242,1.00); */
   
 }
 
 
+.input-container {
+float: right;
+}
+
+.input-box {
+  float: right;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
 
 .users-container {
   border: solid 0.5px gray;
 
 }
 
-.grid {
-
-  display: flex;
-  flex-direction: column;
-  text-align-last: center;
-  width: 40%;
-  margin-left: 30%;
-}
 
 h1 {
   text-align: center;
@@ -61,10 +35,8 @@ h1 {
 .imgs {
   border-radius: 50%;
   float: left;
-  height: 10%;
-  margin-right: 15px;
-  margin-left: 2%;
-  padding-top: 10px;
+  width: 10%;
+
 }
 
 .name {
@@ -75,91 +47,25 @@ h1 {
 }
 
 .at {
-  float: left;
   color: white;
-
-}
-
-.label-input {
-  float: right;
-  color: white;
-
-}
-
-
-
-.input-container {
-  border: solid gray;
-  margin-right: 5%;
-  width: 7.8%;
-  height: 30px;
-  float: right;
-}
-
-.input-box {
-  float: right;
-  height: 30px;
 
 }
 
 .tweets {
-  height: 100%;
-  width: 450px;
   text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
 color: white;
-margin-left: 2%;
-text-align: center;
-padding-top: 30px;
 }
 
-.tweet-container {
-  width: 100%;
-}
-
-/* .home-section {
-  width: 25%;
-  height: 45px;
-  border: solid white;
-  margin-left: 36.7%;
-} */
-
-.home-section h6 {
+.twit-cons {
   color: white;
 }
 
 
-.content-section {
-  height: 100px;
-  width: 25%;
-  border: solid gray;
-  margin-left: 36.7%;
-  margin-bottom: 15px;
-}
-.avt-img {
-  width: 10%;
-  border-radius: 20%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  /* padding-bottom: 10%; */
-}
 
-#text {
-  width: 75%;
-  height: 75px;
-  margin-top: 5%;
-  background-color: rgb(21, 32, 43);;
-  color: white;
-}
 
-i {
-  color: white;
-  padding: 1em;
-  position: relative;
-  /* position: absolute; */
-  /* font-size: 2em; */
-  /* bottom: 0;  */
-  
-}
+
+
+
+
