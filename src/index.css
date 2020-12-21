@@ -7,12 +7,21 @@ body {
 
 
 .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 float: right;
+height: 50px;
+border: solid 1px gray;
+
 }
 
 .input-box {
-  float: right;
+  height: 50px;
+  border-radius: 50%;
 }
+
+
 
 .grid {
   display: flex;
