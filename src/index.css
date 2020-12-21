@@ -60,6 +60,10 @@ color: white;
 
 .twit-cons {
   color: white;
+  margin: 10%;
+  margin-bottom: 0;
+  margin-top: 0;
+  cursor: pointer;
 }
 
 
