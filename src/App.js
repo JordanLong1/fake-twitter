@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Home from './Home'
 import {Repeat} from 'react-feather';
 import {MessageCircle} from 'react-feather';
 import {Heart} from 'react-feather'; 
 import {Share} from 'react-feather';
-import SideNav from './SideNav'
+
 
 export default function App() {
   
@@ -45,14 +44,15 @@ export default function App() {
           />
           <p className='name'>{user.name.first} {user.name.last}</p>
           <p className='at'>@{user.login.username}</p>
-          <MessageCircle />
-        <Repeat />
-        <Heart />
-        <Share />
+         
           <p className='tweets'>{userTweets}</p>
-          <p>
 
-          </p>
+        <MessageCircle className='twit-cons' />
+        <Repeat className='twit-cons'/>
+        <Heart className='twit-cons'/>
+        <Share className='twit-cons' />
+
+          
         </div>
       );
     });
@@ -64,15 +64,10 @@ export default function App() {
     });
   };
 
-const getOneImg = () => {
-  return users.map(user => {
-    // console.log(user.picture.large)
-  })
-}
-
   return (
     <div className="App">
-      <div className='input-container'>
+
+<div className='input-container'>
       <input
       className='input-box'
         type="text"
@@ -80,14 +75,14 @@ const getOneImg = () => {
         onChange={(e) => setInput(e.target.value)}
         placeholder='Search...'
       />
-
       </div>
-      <SideNav />
+  
       <div className="grid">
         {mapUsers()}
-        {getOneImg()}
         </div>
-      <div></div>
+
+      
+    
     </div>
   );
 }
