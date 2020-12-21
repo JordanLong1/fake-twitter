@@ -3,7 +3,7 @@ import React from 'react'
 export default function SideNav() {
     return (
 
-        <div className='nav-container'>
+   
 
             <div className='nav-section'>
             <ul className='ul-for-nav'>
@@ -13,8 +13,7 @@ export default function SideNav() {
                 <li>Profile</li>
                 <button>Tweet</button>
             </ul>
-
             </div>
-        </div>
+
         )
 }
