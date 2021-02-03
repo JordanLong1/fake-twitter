@@ -3,19 +3,22 @@ import {Repeat} from 'react-feather';
 import {MessageCircle} from 'react-feather';
 import {Heart} from 'react-feather'; 
 import {Share} from 'react-feather';
+import Confetti from 'react-confetti'; 
+
+
 
 
 export default function App() {
   
   const [users, setUsers] = useState([]);
   const [input, setInput] = useState("");
-  const [tweets, setTweets] = useState([])
+  const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
     fetch("https://randomuser.me/api?results=50")
       .then((resp) => resp.json())
       .then((res) => setUsers(res.results));
-  }, []);
+  }, [setUsers]);
 
 
   useEffect(() => {
@@ -35,6 +38,15 @@ export default function App() {
        return tweet.title
       })
 
+      const handleIconClick = () => {
+        return (
+          <Confetti
+          numberOfPieces={500}
+          recycle={false}
+          />
+        )
+      }
+
       return (
         <div key={user.login.username} className="users-container">
           <img
@@ -47,10 +59,10 @@ export default function App() {
          
           <p className='tweets'>{userTweets}</p>
 
-        <MessageCircle className='twit-cons' />
-        <Repeat className='twit-cons'/>
-        <Heart className='twit-cons'/>
-        <Share className='twit-cons' />
+        <MessageCircle className='twit-cons' onClick={handleIconClick} />
+        <Repeat className='twit-cons' onClick={handleIconClick} />
+        <Heart className='twit-cons' onClick={handleIconClick} />
+        <Share className='twit-cons' onClick={handleIconClick}  />
 
           
         </div>
