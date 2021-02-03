@@ -13,9 +13,9 @@ function Home(props) {
 
     return (
         <div className='tweet-container'>
-            {/* <div className='home-section'>
+            <div className='home-section'>
                 <h6>Home</h6>
-            </div> */}
+            </div>
             <div className='content-section'>
             <img className='avt-img' src={img} alt='' />
             <textarea id="text" type='text' value={tweet} onChange={(e) => setTweet(e.target.value) } placeholder='Whats happening?' />
